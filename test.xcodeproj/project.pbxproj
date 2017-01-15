@@ -11,6 +11,12 @@
 		28CEF4401E2BC39400D103D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CEF43F1E2BC39400D103D6 /* ViewController.swift */; };
 		28CEF4421E2BC39400D103D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CEF4411E2BC39400D103D6 /* Assets.xcassets */; };
 		28CEF4451E2BC39400D103D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CEF4431E2BC39400D103D6 /* Main.storyboard */; };
+		28CEF44D1E2BC42100D103D6 /* BrodalPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CEF44C1E2BC42100D103D6 /* BrodalPriorityQueue.swift */; };
+		28CEF44F1E2BC42F00D103D6 /* SkewBinomialHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CEF44E1E2BC42F00D103D6 /* SkewBinomialHeap.swift */; };
+		28CEF4511E2BC44700D103D6 /* Deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CEF4501E2BC44700D103D6 /* Deque.swift */; };
+		28CEF4531E2BC46F00D103D6 /* TestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CEF4521E2BC46F00D103D6 /* TestManager.swift */; };
+		28CEF4571E2BD17800D103D6 /* BYFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CEF4561E2BD17800D103D6 /* BYFileManager.swift */; };
+		28CEF4591E2BD46D00D103D6 /* TestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CEF4581E2BD46D00D103D6 /* TestGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		28CEF4411E2BC39400D103D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28CEF4441E2BC39400D103D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28CEF4461E2BC39400D103D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28CEF44C1E2BC42100D103D6 /* BrodalPriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrodalPriorityQueue.swift; sourceTree = "<group>"; };
+		28CEF44E1E2BC42F00D103D6 /* SkewBinomialHeap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkewBinomialHeap.swift; sourceTree = "<group>"; };
+		28CEF4501E2BC44700D103D6 /* Deque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deque.swift; sourceTree = "<group>"; };
+		28CEF4521E2BC46F00D103D6 /* TestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestManager.swift; sourceTree = "<group>"; };
+		28CEF4561E2BD17800D103D6 /* BYFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BYFileManager.swift; sourceTree = "<group>"; };
+		28CEF4581E2BD46D00D103D6 /* TestGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +64,17 @@
 		28CEF43C1E2BC39400D103D6 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				28CEF44C1E2BC42100D103D6 /* BrodalPriorityQueue.swift */,
+				28CEF44E1E2BC42F00D103D6 /* SkewBinomialHeap.swift */,
+				28CEF4501E2BC44700D103D6 /* Deque.swift */,
 				28CEF43D1E2BC39400D103D6 /* AppDelegate.swift */,
 				28CEF43F1E2BC39400D103D6 /* ViewController.swift */,
 				28CEF4411E2BC39400D103D6 /* Assets.xcassets */,
 				28CEF4431E2BC39400D103D6 /* Main.storyboard */,
 				28CEF4461E2BC39400D103D6 /* Info.plist */,
+				28CEF4521E2BC46F00D103D6 /* TestManager.swift */,
+				28CEF4561E2BD17800D103D6 /* BYFileManager.swift */,
+				28CEF4581E2BD46D00D103D6 /* TestGenerator.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -133,7 +151,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CEF44F1E2BC42F00D103D6 /* SkewBinomialHeap.swift in Sources */,
+				28CEF4531E2BC46F00D103D6 /* TestManager.swift in Sources */,
+				28CEF4571E2BD17800D103D6 /* BYFileManager.swift in Sources */,
 				28CEF4401E2BC39400D103D6 /* ViewController.swift in Sources */,
+				28CEF44D1E2BC42100D103D6 /* BrodalPriorityQueue.swift in Sources */,
+				28CEF4591E2BD46D00D103D6 /* TestGenerator.swift in Sources */,
+				28CEF4511E2BC44700D103D6 /* Deque.swift in Sources */,
 				28CEF43E1E2BC39400D103D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
