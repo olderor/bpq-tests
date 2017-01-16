@@ -33,7 +33,7 @@ To insert the number to the queue we just type it in the line, for example `42`.
 Output rules.</br>
 Each test file contains data splitted by newline character (`\n`).</br>
 After each command `top` or `pop` we should add number that was retrieved to the output file.</br>
-If the queue is empty and there is nothing to retrieve, we return string with `nil` value which means that there is no numbers in the queue.</br>
+If the queue is empty and there is nothing to retrieve, we should return string with `nil` value which means that there is no numbers in the queue.</br>
 Note, that when we use swift implementation it also add test elapsed time at the end of the file.
 ## Result format ##
 The program produces the [result file](check_result.txt).</br>
