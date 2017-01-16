@@ -1,7 +1,15 @@
 # bpq-tests
 Project for testing Brodal-Okasaki Priority Queue.</br></br>
-
+# Table of contents #
+[1. Main information](#main-information)</br>
+[2. Tests input format](#tests-input-format)</br>
+[3. Output format](#output-format)</br>
+[4. Result format](#result-format)</br>
+[5. Lets talk about all kind of tests](#lets-talk-about-all-kind-of-tests)</br>
+# Main information #
 Input data is available [here](data/tests).</br>
+Bpq data output is available [here](data/bpq%20answers).</br>
+Correct data output is available [here](data/correct%20answers).</br></br>
 There are 50 different tests.</br>
 There are 10 different types of tests.</br>
 <p>Tests are splitted into groups of 10. Each group has different tests sizes.
@@ -11,13 +19,22 @@ There are 10 different types of tests.</br>
 <li>20-29 - tests with size of `10 000`.</li>
 <li>30-39 - tests with size of `100 000`.</li>
 <li>40-49 - tests with size of `1 000 000`.</li>
-</ul></p></br>
-## Tests format ##
+</ul>
+</p></br>
+## Tests input format ##
 Input rules.</br>
 Each test file contains data splitted by newline character (`\n`).</br>
 To retrieve current top element in the queue (without removing it from the queue) we use command `top`.</br>
 To retrieve and remove current top element from the queue we use command `pop`.</br>
 To insert the number to the queue we just type it in the line, for example `42`.</br></br>
+## Output format ##
+Output rules.</br>
+Each test file contains data splitted by newline character (`\n`).</br>
+After each command `top` or `pop` we should add number that was retrieved to the output file.</br>
+## Result format ##
+The program produces the [result file](check_result.txt).</br>
+Each line in the file describes the result of the test. The line contains information about the test (index of the test) and result comparing to the correct output (`OK` or `WA`).</br>
+Example: `Test #0 - OK.`.
 # Lets talk about all kind of tests</br>
 0.&nbsp;[ZigZag Test](#test-type-0---zigzag-test)</br>
 1.&nbsp;[Increasing elements Test](#test-type-1---increasing-elements-test)</br>
