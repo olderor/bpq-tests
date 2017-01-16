@@ -5,7 +5,8 @@ Project for testing Brodal-Okasaki Priority Queue.</br></br>
 [2. Tests input format](#tests-input-format)</br>
 [3. Output format](#output-format)</br>
 [4. Result format](#result-format)</br>
-[5. Lets talk about all kind of tests](#lets-talk-about-all-kind-of-tests)</br>
+[5. Correct answers](#correct-answers)</br>
+[6. Lets talk about all kind of tests](#lets-talk-about-all-kind-of-tests)</br>
 # Main information #
 Input data is available [here](data/tests).</br>
 Bpq data output is available [here](data/bpq%20answers).</br>
@@ -26,15 +27,27 @@ Input rules.</br>
 Each test file contains data splitted by newline character (`\n`).</br>
 To retrieve current top element in the queue (without removing it from the queue) we use command `top`.</br>
 To retrieve and remove current top element from the queue we use command `pop`.</br>
-To insert the number to the queue we just type it in the line, for example `42`.</br></br>
+To insert the number to the queue we just type it in the line, for example `42`.</br>
 ## Output format ##
 Output rules.</br>
 Each test file contains data splitted by newline character (`\n`).</br>
 After each command `top` or `pop` we should add number that was retrieved to the output file.</br>
+If the queue is empty and there is nothing to retrieve, we return string with `nil` value which means that there is no numbers in the queue.
 ## Result format ##
 The program produces the [result file](check_result.txt).</br>
 Each line in the file describes the result of the test. The line contains information about the test (index of the test) and result comparing to the correct output (`OK` or `WA`).</br>
 Example: `Test #0 - OK.`.
+## Correct answers ##
+We can get correct answer to the test in two ways.</br></br>
+The first method is to use [this swift function](checker.swift). This function takes a string parameter - given input - content of the input file. For each line in the content we determine what command it is (either `top`, `pop` or a number to push).</br>
+As an priority queue we are going to take an array that will store our elements.</br>
+If we need to get `top` element we have to sort the array using basic sort function and take the first element (if size of the array is 0 than just return `nil` value).</br>
+If we need to process `pop` command we have to sort the array and take the first element and delete it from the array using basic remove function with a parameter 0 as index to remove.</br>
+To add number to the queue we have just to append new element to the array.</br>
+Whenever we need to take number from the queue, the list of elements will be sorted, so we can easily get minimum number. All operations on the array are standard so this algorithm will be correct.</br>
+We can use this function to get correct answer to the problem immediately after running test on the bpq. But this algorithm is too slow and because swift is slow programming language it can be applied on the test with only small sizes (tests 0-19).</br></br>
+The second method is to use [c++ checker](checker.cpp). This implementation is similar to previous, but instead of using array we can use standard stl priority queue. As you know, this implementation stores elements in the descending order. Since all numbers in the tests are integers, they have to be smaller than max integer value (let it be `INF` value). So each time we have to push/pop/top queue we use this formula `INF - number`, so we will store elements in ascending order and print correct numbers.</br>
+Because `c++` is much faster than `swift` and it has standard priority queue implementation (so this algorithms is faster than previous), I would recomend to use this method on the other tests (20-49).
 # Lets talk about all kind of tests</br>
 0.&nbsp;[ZigZag Test](#test-type-0---zigzag-test)</br>
 1.&nbsp;[Increasing elements Test](#test-type-1---increasing-elements-test)</br>
