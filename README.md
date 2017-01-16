@@ -6,7 +6,7 @@ Project for testing Brodal-Okasaki Priority Queue.</br></br>
 [3. Output format](#output-format)</br>
 [4. Result format](#result-format)</br>
 [5. Correct answers](#correct-answers)</br>
-[6. Lets talk about all kind of tests](#lets-talk-about-all-kind-of-tests)</br>
+[6. Lets talk about all kinds of tests](#lets-talk-about-all-kinds-of-tests)</br>
 # Main information #
 Input data is available [here](data/tests).</br>
 Bpq data output is available [here](data/bpq%20answers).</br>
@@ -48,7 +48,7 @@ Whenever we need to take number from the queue, the list of elements will be sor
 We can use this function to get correct answer to the problem immediately after running test on the bpq. But this algorithm is too slow and because swift is slow programming language it can be applied on the test with only small sizes (tests 0-19).</br></br>
 The second method is to use [c++ checker](checker.cpp). This implementation is similar to previous, but instead of using array we can use standard stl priority queue. As you know, this implementation stores elements in the descending order. Since all numbers in the tests are integers, they have to be smaller than max integer value (let it be `INF` value). So each time we have to push/pop/top queue we use this formula `INF - number`, so we will store elements in ascending order and print correct numbers.</br>
 Because `c++` is much faster than `swift` and it has standard priority queue implementation (so this algorithms is faster than previous), I would recomend to use this method on the other tests (20-49).
-# Lets talk about all kind of tests</br>
+# Lets talk about all kinds of tests</br>
 0.&nbsp;[ZigZag Test](#test-type-0---zigzag-test)</br>
 1.&nbsp;[Increasing elements Test](#test-type-1---increasing-elements-test)</br>
 2.&nbsp;[Decreasing elements Test](#test-type-2---decreasing-elements-test)</br>
@@ -306,3 +306,7 @@ top
 pop
 top
 ```
+</br></br>
+Thanks to mattgallagher for the Swift Deque implementation.</br></br>
+Created by olderor.</br>
+Copyright © 2017 olderor. All rights reserved.
