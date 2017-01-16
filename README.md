@@ -22,6 +22,13 @@ To insert the number to the queue we just type it in the line, for example `42`.
 0.&nbsp;[ZigZag Test](#test-type-0---zigzag-test)</br>
 1.&nbsp;[Increasing elements Test](#test-type-1---increasing-elements-test)</br>
 2.&nbsp;[Decreasing elements Test](#test-type-2---decreasing-elements-test)</br>
+3.&nbsp;[Zero Test](#test-type-3---zero-test)</br>
+4.&nbsp;[Push-Pop Test](#test-type-4---push-pop-test)</br>
+5.&nbsp;[Top Test](#test-type-5---top-test)</br>
+6.&nbsp;[Push-Pop Increasing Test](#test-type-6---push-pop-increasing-test)</br>
+7.&nbsp;[Push-Pop Random Test](#test-type-7---push-pop-random-test)</br>
+8.&nbsp;[Push Random Test](#test-type-8---push-random-test)</br>
+9.&nbsp;[Random Test](#test-type-9---random-test)</br>
 ## Test type #0 - ZigZag Test ##
 For each number in range from `0` to `size` we insert the number and after that the number `(size - number - 1)`.</br>
 This test is used for checking if queue can correctly insert numbers, such that each new number changes the sign (`<` or `>`) after each insertation.
