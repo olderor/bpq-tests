@@ -6,7 +6,8 @@ Project for testing Brodal-Okasaki Priority Queue.</br></br>
 [3. Output format](#output-format)</br>
 [4. Result format](#result-format)</br>
 [5. Correct answers](#correct-answers)</br>
-[6. Lets talk about all kinds of tests](#lets-talk-about-all-kinds-of-tests)</br>
+[6. Checker](#checker)</br>
+[7. Lets talk about all kinds of tests](#lets-talk-about-all-kinds-of-tests)</br>
 # Main information #
 Input data is available [here](data/tests).</br>
 Bpq data output is available [here](data/bpq%20answers).</br>
@@ -15,11 +16,11 @@ There are 50 different tests.</br>
 There are 10 different types of tests.</br>
 <p>Tests are splitted into groups of 10. Each group has different tests sizes.
 <ul>
-<li>&nbsp;0&nbsp;-&nbsp;9&nbsp;&nbsp;- tests with size of `100`.</li>
-<li>10-19 - tests with size of `1 000`.</li>
-<li>20-29 - tests with size of `10 000`.</li>
-<li>30-39 - tests with size of `100 000`.</li>
-<li>40-49 - tests with size of `1 000 000`.</li>
+<li>&nbsp;0&nbsp;-&nbsp;9&nbsp;&nbsp;- tests with size of 100.</li>
+<li>10-19 - tests with size of 1 000.</li>
+<li>20-29 - tests with size of 10 000.</li>
+<li>30-39 - tests with size of 100 000.</li>
+<li>40-49 - tests with size of 1 000 000.</li>
 </ul>
 </p></br>
 ## Tests input format ##
@@ -32,7 +33,8 @@ To insert the number to the queue we just type it in the line, for example `42`.
 Output rules.</br>
 Each test file contains data splitted by newline character (`\n`).</br>
 After each command `top` or `pop` we should add number that was retrieved to the output file.</br>
-If the queue is empty and there is nothing to retrieve, we return string with `nil` value which means that there is no numbers in the queue.
+If the queue is empty and there is nothing to retrieve, we return string with `nil` value which means that there is no numbers in the queue.</br>
+Note, that when we use swift implementation it also add test elapsed time at the end of the file.
 ## Result format ##
 The program produces the [result file](check_result.txt).</br>
 Each line in the file describes the result of the test. The line contains information about the test (index of the test) and result comparing to the correct output (`OK` or `WA`).</br>
@@ -48,7 +50,15 @@ Whenever we need to take number from the queue, the list of elements will be sor
 We can use this function to get correct answer to the problem immediately after running test on the bpq. But this algorithm is too slow and because swift is slow programming language it can be applied on the test with only small sizes (tests 0-19).</br></br>
 The second method is to use [c++ checker](checker.cpp). This implementation is similar to previous, but instead of using array we can use standard stl priority queue. As you know, this implementation stores elements in the descending order. Since all numbers in the tests are integers, they have to be smaller than max integer value (let it be `INF` value). So each time we have to push/pop/top queue we use this formula `INF - number`, so we will store elements in ascending order and print correct numbers.</br>
 Because `c++` is much faster than `swift` and it has standard priority queue implementation (so this algorithms is faster than previous), I would recomend to use this method on the other tests (20-49).
+## Checker ##
+After we have answers produced by bpq queue and correct answers, we have to check if they are the same. To do this we use [this function](result%20checker.swift). It opens files with bpq answers and correct answers, checks if they have the same amount of lines and after that compares each line if they are the same.</br>
+To check all answers to the tests we simply call this function and remember the result of testing, after that we create [file like this](check_result.txt) that stores the result of the testing.
 # Lets talk about all kinds of tests</br>
+As you already know:
+There are 50 different tests.</br>
+There are 10 different types of tests.</br>
+Tests are splitted into groups of 10. Each group has different tests sizes.</br>
+Now we are going to describe each kind of tests.</br></br>
 0.&nbsp;[ZigZag Test](#test-type-0---zigzag-test)</br>
 1.&nbsp;[Increasing elements Test](#test-type-1---increasing-elements-test)</br>
 2.&nbsp;[Decreasing elements Test](#test-type-2---decreasing-elements-test)</br>
