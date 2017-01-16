@@ -54,7 +54,7 @@ Because `c++` is much faster than `swift` and it has standard priority queue imp
 After we have answers produced by bpq queue and correct answers, we have to check if they are the same. To do this we use [this function](result%20checker.swift). It opens files with bpq answers and correct answers, checks if they have the same amount of lines and after that compares each line if they are the same.</br>
 To check all answers to the tests we simply call this function and remember the result of testing, after that we create [file like this](check_result.txt) that stores the result of the testing.
 # Lets talk about all kinds of tests</br>
-As you already know:
+As you already know:</br>
 There are 50 different tests.</br>
 There are 10 different types of tests.</br>
 Tests are splitted into groups of 10. Each group has different tests sizes.</br>
