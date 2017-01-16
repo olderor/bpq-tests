@@ -19,7 +19,7 @@ To retrieve current top element in the queue (without removing it from the queue
 To retrieve and remove current top element from the queue we use command `pop`.</br>
 To insert the number to the queue we just type it in the line, for example `42`.</br></br>
 # Lets talk about all kind of tests</br>
-0.&nbsp;[ZigZag Test](#test-type-0---ZigZag-test)</br>
+0.&nbsp;[ZigZag Test](#test-type-0---zigzag-test)</br>
 1.&nbsp;[Increasing elements Test](#test-type-1---increasing-elements-test)</br>
 2.&nbsp;[Decreasing elements Test](#test-type-2---decreasing-elements-test)</br>
 ## Test type #0 - ZigZag Test ##
