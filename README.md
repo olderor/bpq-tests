@@ -1,5 +1,5 @@
 # bpq-tests
-Project for testing Brodal-Okasaki Priority Queue.</br></br>
+Project for testing [Brodal-Okasaki Priority Queue](https://github.com/olderor/visualization).</br></br>
 # Table of contents #
 [1. Main information](#main-information)</br>
 [2. Tests input format](#tests-input-format)</br>
