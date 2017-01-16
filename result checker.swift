@@ -1,3 +1,19 @@
+func checkAllTests() {
+    var result = ""
+    for i in 0..<50 {
+        let isCorrect = checkAnswer(index: i)
+        if isCorrect {
+            result += "Test #\(i) - OK.\n"
+            print("Test #\(i) - OK.\n")
+        } else {
+            result += "Test #\(i) - WA.\n"
+            print("Test #\(i) - WA.\n")
+        }
+    }
+    print(result)
+    BYFileManager.writeFile(path: "check_result", content: result)
+}
+
 func checkAnswer(index: Int) -> Bool {
     print("checking \(index) test...")
     let myAnswer = BYFileManager.readFile(path: "\(index)t")
