@@ -4,14 +4,14 @@ Project for testing Brodal-Okasaki Priority Queue.</br></br>
 Input data is available [here](data/tests).</br>
 There are 50 different tests.</br>
 There are 10 different types of tests.</br>
-<p>Tests are splitted into groups of 10. Each group has different tests sizes.</br>
-*&nbsp;&nbsp;0&nbsp;-&nbsp;9&nbsp;&nbsp;- tests with size of `100`.</br>
-*&nbsp;10-19 - tests with size of `1 000`.</br>
-*&nbsp;20-29 - tests with size of `10 000`.</br>
-*&nbsp;30-39 - tests with size of `100 000`.</br>
-*&nbsp;40-49 - tests with size of `1 000 000`.
-</br>
-</br>
+<p>Tests are splitted into groups of 10. Each group has different tests sizes.
+<ul>
+<li>&nbsp;0&nbsp;-&nbsp;9&nbsp;&nbsp;- tests with size of `100`.</li>
+<li>10-19 - tests with size of `1 000`.</li>
+<li>20-29 - tests with size of `10 000`.</li>
+<li>30-39 - tests with size of `100 000`.</li>
+<li>40-49 - tests with size of `1 000 000`.</li>
+</ul></p></br>
 ## Tests format ##
 Input rules.</br>
 Each test file contains data splitted by newline character (`\n`).</br>
