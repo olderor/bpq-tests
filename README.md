@@ -31,10 +31,10 @@ To retrieve and remove current top element from the queue we use command `pop`.<
 To insert the number to the queue we just type it in the line, for example `42`.</br>
 ## Output format ##
 Output rules.</br>
-Each test file contains data splitted by newline character (`\n`).</br>
+Each output file contains data splitted by newline character (`\n`).</br>
 After each command `top` or `pop` we should add number that was retrieved to the output file.</br>
 If the queue is empty and there is nothing to retrieve, we should return string with `nil` value which means that there is no numbers in the queue.</br>
-Note, that when we use swift implementation it also add test elapsed time at the end of the file.
+Note, that when we use swift implementation it also adds test elapsed time at the end of the file.
 ## Result format ##
 The program produces the [result file](check_result.txt).</br>
 Each line in the file describes the result of the test. The line contains information about the test (index of the test) and result comparing to the correct output (`OK` or `WA`).</br>
