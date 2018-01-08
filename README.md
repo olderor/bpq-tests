@@ -82,25 +82,15 @@ There are 10 different types of tests.
 Tests are splitted into groups of 10. Each group has different tests sizes.  
 
 Now we are going to describe each kind of tests.
-
 0.&nbsp;[ZigZag Test](#test-type-0---zigzag-test)  
-
 1.&nbsp;[Increasing elements Test](#test-type-1---increasing-elements-test)  
-
 2.&nbsp;[Decreasing elements Test](#test-type-2---decreasing-elements-test)  
-
 3.&nbsp;[Zero Test](#test-type-3---zero-test)  
-
 4.&nbsp;[Push-Pop Test](#test-type-4---push-pop-test)  
-
 5.&nbsp;[Top Test](#test-type-5---top-test)  
-
 6.&nbsp;[Push-Pop Increasing Test](#test-type-6---push-pop-increasing-test)  
-
 7.&nbsp;[Push-Pop Random Test](#test-type-7---push-pop-random-test)  
-
 8.&nbsp;[Push Random Test](#test-type-8---push-random-test)  
-
 9.&nbsp;[Random Test](#test-type-9---random-test)  
 
 ## Test type #0 - ZigZag Test ##
